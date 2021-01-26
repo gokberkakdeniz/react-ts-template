@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.link {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.link::after {
+  content: ' >>>';
+}

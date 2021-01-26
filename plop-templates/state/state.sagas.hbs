@@ -1,0 +1,11 @@
+import { ForkEffect, takeEvery } from "redux-saga/effects";
+import { {{ constantCase name }}_DECREMENT, {{ constantCase name }}_INCREMENT } from "./{{ kebabCase name }}.types";
+
+function* {{ camelCase name }}Saga(): Generator<ForkEffect<never>, void, unknown> {
+  yield takeEvery([{{ constantCase name }}_INCREMENT, {{ constantCase name }}_DECREMENT], (action) => {
+    // eslint-disable-next-line no-console
+    console.log(action.type);
+  });
+}
+
+export default {{ camelCase name }}Saga;

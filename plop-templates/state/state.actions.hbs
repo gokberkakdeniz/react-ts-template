@@ -1,0 +1,9 @@
+import { {{ pascalCase name }}Action, {{ constantCase name }}_DECREMENT, {{ constantCase name }}_INCREMENT } from "./{{ kebabCase name }}.types";
+
+export const increase = (): {{ pascalCase name }}Action => ({
+  type: {{ constantCase name }}_INCREMENT,
+});
+
+export const decrease = (): {{ pascalCase name }}Action => ({
+  type: {{ constantCase name }}_DECREMENT,
+});

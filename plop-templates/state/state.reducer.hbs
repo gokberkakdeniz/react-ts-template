@@ -1,0 +1,22 @@
+import {
+  {{ pascalCase name }}Action,
+  {{ pascalCase name }}State,
+  {{ constantCase name }}_DECREMENT,
+  {{ constantCase name }}_INCREMENT,
+} from "./{{ kebabCase name }}.types";
+
+const {{ camelCase name }}Reducer = (
+  state: {{ pascalCase name }}State = 0,
+  action: {{ pascalCase name }}Action
+): {{ pascalCase name }}State => {
+  switch (action.type) {
+    case {{ constantCase name }}_INCREMENT:
+      return state + 1;
+    case {{ constantCase name }}_DECREMENT:
+      return state - 1;
+    default:
+      return state;
+  }
+};
+
+export default {{ camelCase name }}Reducer;

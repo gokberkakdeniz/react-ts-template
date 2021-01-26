@@ -1,0 +1,14 @@
+export const {{ constantCase name }}_INCREMENT = "{{ constantCase name }}_INCREMENT";
+export const {{ constantCase name }}_DECREMENT = "{{ constantCase name }}_DECREMENT";
+
+export interface IncrementAction {
+  type: typeof {{ constantCase name }}_INCREMENT;
+}
+
+export interface DecrementAction {
+  type: typeof {{ constantCase name }}_DECREMENT;
+}
+
+export type {{ pascalCase name }}State = number;
+
+export type {{ pascalCase name }}Action = IncrementAction | DecrementAction;
