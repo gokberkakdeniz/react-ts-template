@@ -27,6 +27,7 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -38,15 +39,14 @@ module.exports = {
       },
     ],
     "no-underscore-dangle": ["off"],
-    "no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
     "func-names": ["error", "always", { generators: "never" }],
     "react/jsx-filename-extension": [1, { extensions: [".jsx", ".tsx"] }],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    quotes: ["error", "double"],
-    semi: "off",
     "prettier/prettier": "error",
     "arrow-body-style": "off",
+    quotes: ["error", "double"],
+    semi: "off",
   },
   settings: {
     "import/resolver": {
