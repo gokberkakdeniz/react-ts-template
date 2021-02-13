@@ -43,6 +43,7 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".jsx", ".tsx"] }],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
     "prettier/prettier": "error",
     "arrow-body-style": "off",
     quotes: ["error", "double"],
