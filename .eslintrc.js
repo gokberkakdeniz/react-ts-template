@@ -6,14 +6,12 @@ module.exports = {
   },
   extends: [
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
     "airbnb",
+    "plugin:@typescript-eslint/recommended",
     "airbnb/hooks",
     "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
   ],
-  plugins: ["react", "prettier", "@typescript-eslint"],
+  plugins: ["react", "prettier"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -44,8 +42,11 @@ module.exports = {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
+    "react/function-component-definition": "off",
     "prettier/prettier": "error",
     "arrow-body-style": "off",
+    "no-restricted-exports": "off",
+    "default-param-last": "off",
     quotes: ["error", "double"],
     semi: "off",
   },

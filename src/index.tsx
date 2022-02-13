@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { Router } from "react-router-dom";
+import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
 import { StrictMode } from "react";
 import { Provider } from "react-redux";
 
@@ -13,9 +13,9 @@ import "./index.css";
 ReactDOM.render(
   <StrictMode>
     <Provider store={store}>
-      <Router history={history}>
+      <HistoryRouter history={history}>
         <App />
-      </Router>
+      </HistoryRouter>
     </Provider>
   </StrictMode>,
   document.getElementById("root")
